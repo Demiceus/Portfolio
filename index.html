@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Demiceus — A Digital Introduction</title>
+<meta name="description" content="[YOUR BIO]">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="cursor" aria-hidden="true"></div>
+<div class="orb" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a href="#home" class="logo">Demiceus</a>
+  <nav aria-label="Main">
+    <ul class="links" id="links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <button class="icon-btn" id="theme" aria-label="Toggle light or dark theme">◐</button>
+  <button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="links">☰</button>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-text reveal">
+    <p class="badge"><span class="dot"></span> Available for collaboration</p>
+    <h1>Hello, I'm Joshua Rein T. Betis.</h1>
+    <p class="lead">A student, developer, creator and curious human. I enjoy building things, learning new technologies, and turning ideas into working applications.</p>
+    <div class="actions">
+      <a class="btn primary" href="#about">Explore my world</a>
+      <a class="btn" href="#projects">View projects</a>
+    </div>
+  </div>
+  <div class="hero-visual reveal" aria-hidden="false">
+    <div class="avatar card glow"><img src="assets/images/profile.jpg" alt="Portrait of Demiceus" onerror="this.replaceWith(Object.assign(document.createElement('span'),{textContent:'[YN]'}))"></div>
+    <div class="float f1 card">✦ Currently learning</div>
+    <div class="float f2 card">📍 Meycauayan Bulacan</div>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="reveal">Who am I?</h2>
+  <div class="bento">
+    <article class="card glow span2 reveal"><h3>About me</h3><p>I'm currently a student at Pambayang Dalubhasaan ng marilao who's currently learning web development and programming. and my goal is to become a proficient developer.</p></article>
+    <article class="card glow reveal"><h3>Location</h3><p>Meycauayan Bulacan</p></article>
+    <article class="card glow reveal"><h3>Currently learning</h3><p>HTML/CSS/JavaScript<br>Python<br>Dart/flutter<br></p></article>
+    <article class="card glow span2 reveal"><h3>My goal</h3><p>Become a proficient web developer — for example, building useful applications that make everyday life easier.</p></article>
+  </div>
+</section>
+
+<section id="hobbies">
+  <h2 class="reveal">Favorite hobbies</h2>
+  <div class="grid4" id="hobbies"></div>
+</section>
+
+<section id="skills">
+  <h2 class="reveal">What I can do</h2>
+  <div class="grid4" id="skills-grid"></div>
+  <h3 class="sub reveal">Programming languages</h3>
+  <div class="grid6" id="langs"></div>
+</section>
+
+<section id="projects">
+  <h2 class="reveal">What I've built</h2>
+  <div class="bento projects" id="project-grid"></div>
+  <h3 class="sub reveal">Timeline</h3>
+  <ol class="timeline" id="timeline"></ol>
+</section>
+
+<section id="likes">
+  <h2 class="reveal">Things I like</h2>
+  <div class="grid6" id="likes-grid"></div>
+</section>
+
+<section id="contact" class="cta card glow reveal">
+  <h2>Let's connect</h2>
+  <p class="lead">Want to talk about a project, technology, collaboration, or just say hello?</p>
+  <div class="actions center">
+    <button class="btn primary" id="copy-email" data-email="joshuareinbetis.pdm@gmail.com">Copy email</button>
+    <a class="btn" href="https://github.com/Demiceus" target="_blank" rel="noopener">GitHub ↗</a>
+    <a class="btn" href="https://linkedin.com/in/joshua-rein-betis-45496b34b" target="_blank" rel="noopener">LinkedIn ↗</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>© 2026 Joshua Rein T. Betis · Designed &amp; built with HTML, CSS and JavaScript</p>
+  <p><a href="https://github.com/Demiceus" target="_blank" rel="noopener">GitHub</a> <a href="https://linkedin.com/in/joshua-rein-betis-45496b34b" target="_blank" rel="noopener">LinkedIn</a> <a href="mailto:joshuareinbetis.pdm@gmail.com">Email</a></p>
+</footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="m-title" hidden>
+  <div class="sheet card">
+    <button class="icon-btn close" id="m-close" aria-label="Close project">✕</button>
+    <p class="muted" id="m-cat"></p>
+    <h3 id="m-title"></h3>
+    <div class="frame" id="m-frame"></div>
+    <p id="m-desc"></p>
+    <p class="tags" id="m-tags"></p>
+    <div class="actions">
+      <a class="btn primary" id="m-open" target="_blank" rel="noopener">Open application ↗</a>
+      <a class="btn" id="m-git" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>

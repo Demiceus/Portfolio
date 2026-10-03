@@ -1,0 +1,57 @@
+*{
+    overflow-y: hidden ;
+    overflow-x: hidden;
+}
+body{
+    background-color: antiquewhite;
+}
+.rene{
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#inp{
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+    height: 20px;
+}
+
+p{
+    font-size: 20px;
+}
+#btn1{
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 20px;
+}
+#btn2{
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.card{
+height: 100vh;
+width: 100vw;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.img{
+    border-radius: 100%;
+}
+.box{
+    background-color: burlywood;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 4px 5px 10px black;
+    border-radius: 20px;
+}
+.btn-cont{
+    display: flex;
+    gap: 20px;
+}
